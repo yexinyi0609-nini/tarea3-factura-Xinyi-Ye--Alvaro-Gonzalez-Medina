@@ -18,9 +18,9 @@ Porque el código contenía errores de compilación, por lo que el compilador se
 
 |   Nº | Línea | Mensaje de javac | Tipo (léxico / sintaxis / semántica) | Corrección |
 | :--- | :---- | :--------------- | :----------------------------------- | :--------- |
-|   1  |       |                  |                                      |            |
-|   2  |       |                  |                                      |            |
-|   3  |       |                  |                                      |            |
+|   1  |   15  | Syntax error on token "Invalid Character", delete this token | lexico | precio# --> precio |
+|   2  |   17  | Syntax error, insert ";" | sintactico | falta ";" |
+|   3  |   29  | Type mismatch: cannot convert from double to int | semantico | cambiar int total --> double total |
 
 Captura del programa funcionando: capturas/reto2.png
 ## Reto 3 · Depuración del error lógico

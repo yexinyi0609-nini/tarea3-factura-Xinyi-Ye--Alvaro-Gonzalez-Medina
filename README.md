@@ -3,6 +3,7 @@ Pareja: Xinyi Ye y AAnax · GitHub: yexinyi0609-nini, AAnax
 ## Reto 1 · Compilar desde la terminal
 - Comando usado y resultado (captura: capturas/reto1.png)dir
 - ¿Qué es Factura.java? ¿Y Factura.class? ¿Quién ejecuta el .class?
+
 Factura.java es el archivo de código fuente escrito en lenguaje Java que contiene las instrucciones legibles por humanos.
 
 Factura.class es el archivo de bytecode (código intermedio) generado por el compilador(javac) a partir del código fuente.
@@ -10,6 +11,7 @@ Factura.class es el archivo de bytecode (código intermedio) generado por el com
 .class lo ejecuta Java Virtual Machine(JVM).
 
 - ¿Por qué no se ha generado Factura.class la primera vez?
+
 Porque el código contenía errores de compilación, por lo que el compilador se detuvo y no llegó a generar el bytecode.
 
 ## Reto 2 · Errores de compilación

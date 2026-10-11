@@ -1,5 +1,5 @@
 # Tarea 3 · La factura bajo el microscopio
-Pareja: Xinyi Ye y AAnax · GitHub: yexinyi0609-nini, AAnax
+Pareja: Xinyi Ye y Alvaro Gonzalez Medina · GitHub: yexinyi0609-nini, AAnax
 ## Reto 1 · Compilar desde la terminal
 - Comando usado y resultado (captura: capturas/reto1.png)
 - ¿Qué es Factura.java? ¿Y Factura.class? ¿Quién ejecuta el .class?

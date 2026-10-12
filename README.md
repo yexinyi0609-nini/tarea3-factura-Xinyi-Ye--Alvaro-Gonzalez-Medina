@@ -59,4 +59,8 @@ El código queda más limpio ordenado con el método main y es más fácil de mo
   - Portabilidad: el código se descarga con la página y lo interpreta el navegador del cliente, sea Windows, Mac, Linux o un móvil, sin instalar nada. 
   - Tipo de proyecto y coste de desarrollo: es una calculadora sencilla dentro de una web. Con un lenguaje interpretado se escribe, se prueba y se cambia rápido, sin pasar por la compilación.
   - Rendimiento: aquí no importa, el cálculo son unas pocas operaciones y cualquier navegador lo hace al instante.
-- Caso B (propuesta en ensamblador): 
+
+- Caso B (propuesta en ensamblador): no usaría ensamblador, elegiría un lenguaje mixto como Java porque el 'compañero' quiere que funcione rápido en cualquier ordenador y Java se compila a bytecode y se ejecute en cualquier ordenador con una JVM.
+  - Portabilidad: el ensamblador es distinto en cada procesador, por eso el programa no funcionaría en cualquier ordenadores, mientras que Java funciona en cualquier equipo que tenga JVM(Java Virtual Machine).
+  - Coste de desarrollo: programar en ensanblador es muy lento y difícil, para una calculadora sencilla no vale la pena.
+  

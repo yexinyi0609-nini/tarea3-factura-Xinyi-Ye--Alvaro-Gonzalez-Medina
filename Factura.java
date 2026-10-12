@@ -1,3 +1,5 @@
+// Palabra del día: ________
+
 import java.util.Scanner;
 
 public class Factura {
@@ -21,6 +23,7 @@ public class Factura {
         double base = precio * cantidad;
         double descuento = calcularDescuento(base, socio);
         double total = aplicarIVA(base - descuento);
+
 
         System.out.println("Producto: " + producto);
         System.out.printf("Base: %.2f euros%n", base);

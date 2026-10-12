@@ -41,7 +41,7 @@ El programa da 137,94 € porque solo resta 6 € de descuento: (120 − 6) × 1
 
 - Línea del error y explicación: línea 27, `descuento = base * 0.05;`. Con el depurador (punto de ruptura en la línea 23, datos 60, 2 y s) se ve que `descuento` vale 0.0 al principio, 12.0 después del primer `if` (correcto) y 6.0 después del segundo. El `=` sustituye el descuento del 10 % por el del socio en lugar de sumarlos, así que se pierden los 12 €.
 - Corrección: `descuento = descuento + base * 0.05;`. Comprobado con 60, 2 y s: Descuento 18,00 € y Total con IVA 123,42 €.
-- Mi propia prueba (producto, precio, cantidad, socio -> total): Ratón inalámbrico, 40, 2, s -> 91,96 €. La base es 80 €, no supera 100 € y solo se aplica el 5 % de socio (4 €): (80 − 4) × 1,21 = 91,96 €. Coincide con el cálculo a mano.
+- Mi propia prueba (producto, precio, cantidad, socio -> total): Lechuga, 40, 2, s -> 91,96 €. La base es 80 €, no supera 100 € y solo se aplica el 5 % de socio (4 €): (80 − 4) × 1,21 = 91,96 €.
 Captura del depurador: capturas/reto3.png
 
 ## Reto 4 · Reutilización
@@ -55,5 +55,8 @@ aplicarIVA(double importe) --> aplica 21% de IVA al dinero restado con descuento
 El código queda más limpio ordenado con el método main y es más fácil de modificar si cambia la regla de descuento o el %IVA, ya que solo hay que cambiar el método correspondiente sin tocar los de más códigos. Además, al cambiar la variable 'socio' a tipo 'bolean',la condición son más limpia, directa y aparecen menos eerores de texto.
 
 ## Reto 5 · ¿Qué lenguaje elegirías?
-- Caso A (web de la tienda):
-- Caso B (propuesta en ensamblador):
+- Caso A (web de la tienda): Usaria un lenguaje interpretado como JavaScript, que es el que ejecutan los navegadores.
+  - Portabilidad: el código se descarga con la página y lo interpreta el navegador del cliente, sea Windows, Mac, Linux o un móvil, sin instalar nada. 
+  - Tipo de proyecto y coste de desarrollo: es una calculadora sencilla dentro de una web. Con un lenguaje interpretado se escribe, se prueba y se cambia rápido, sin pasar por la compilación.
+  - Rendimiento: aquí no importa, el cálculo son unas pocas operaciones y cualquier navegador lo hace al instante.
+- Caso B (propuesta en ensamblador): 

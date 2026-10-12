@@ -18,11 +18,20 @@ Porque el código contenía errores de compilación, por lo que el compilador se
 
 |   Nº | Línea | Mensaje de javac | Tipo (léxico / sintaxis / semántica) | Corrección |
 | :--- | :---- | :--------------- | :----------------------------------- | :--------- |
-|   1  |   15  | Syntax error on token "Invalid Character", delete this token | lexico | precio# --> precio |
-|   2  |   17  | Syntax error, insert ";" | sintactico | falta ";" |
-|   3  |   29  | Type mismatch: cannot convert from double to int | semantico | cambiar int total --> double total |
+|   1  |   15  | illegal character: '#' | léxico | precio# --> precio |
+|   2  |   17  | ';' expected | sintáctico | añadir ";" al final de sc.nextInt() |
+|   3  |   29  | incompatible types: possible lossy conversion from double to int | semántico | int total --> double total |
 
 Captura del programa funcionando: capturas/reto2.png
+
+Cálculo a mano (precio 60, cantidad 2, socio):
+
+- Base: 60 × 2 = 120 €
+- Descuento: 10 % por superar 100 € (12 €) + 5 % por ser socio (6 €) = 18 €
+- Total: (120 − 18) × 1,21 = 102 × 1,21 = **123,42 €**
+
+El programa da 137,94 € porque solo resta 6 € de descuento: (120 − 6) × 1,21 = 137,94 €. Hay un error lógico que se depura en el reto 3.
+
 ## Reto 3 · Depuración del error lógico
 
 | Variable  | Valor esperado | Valor real |

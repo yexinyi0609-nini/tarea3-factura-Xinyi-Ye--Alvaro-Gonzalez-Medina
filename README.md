@@ -46,10 +46,12 @@ Captura del depurador: capturas/reto3.png
 
 ## Reto 4 · Reutilización
 - Métodos creados y para qué sirve cada uno:
+
 calcularDescuento(double base, boolean socio) --> calcular el descuento según la base(precio sin descuento y si IVA) y si es socio.
 aplicarIVA(double importe) --> aplica 21% de IVA al dinero restado con descuento, dando así el final total de dinero.
 
 - ¿Qué ventaja tiene frente al código anterior?
+
 El código queda más limpio ordenado con el método main y es más fácil de modificar si cambia la regla de descuento o el %IVA, ya que solo hay que cambiar el método correspondiente sin tocar los de más códigos. Además, al cambiar la variable 'socio' a tipo 'bolean',la condición son más limpia, directa y aparecen menos eerores de texto.
 
 ## Reto 5 · ¿Qué lenguaje elegirías?

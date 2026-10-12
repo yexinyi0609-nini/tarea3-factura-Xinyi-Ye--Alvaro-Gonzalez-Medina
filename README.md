@@ -43,9 +43,15 @@ El programa da 137,94 € porque solo resta 6 € de descuento: (120 − 6) × 1
 - Corrección: `descuento = descuento + base * 0.05;`. Comprobado con 60, 2 y s: Descuento 18,00 € y Total con IVA 123,42 €.
 - Mi propia prueba (producto, precio, cantidad, socio -> total): Ratón inalámbrico, 40, 2, s -> 91,96 €. La base es 80 €, no supera 100 € y solo se aplica el 5 % de socio (4 €): (80 − 4) × 1,21 = 91,96 €. 
 Captura del depurador: capturas/reto3.png
+
 ## Reto 4 · Reutilización
 - Métodos creados y para qué sirve cada uno:
+calcularDescuento(double base, boolean socio) --> calcular el descuento según la base(precio sin descuento y si IVA) y si es socio.
+aplicarIVA(double importe) --> aplica 21% de IVA al dinero restado con descuento, dando así el final total de dinero.
+
 - ¿Qué ventaja tiene frente al código anterior?
+El código queda más limpio ordenado con el método main y es más fácil de modificar si cambia la regla de descuento o el %IVA, ya que solo hay que cambiar el método correspondiente sin tocar los de más códigos. Además, al cambiar la variable 'socio' a tipo 'bolean',la condición son más limpia, directa y aparecen menos eerores de texto.
+
 ## Reto 5 · ¿Qué lenguaje elegirías?
 - Caso A (web de la tienda):
 - Caso B (propuesta en ensamblador):

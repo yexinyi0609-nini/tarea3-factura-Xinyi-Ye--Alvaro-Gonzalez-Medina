@@ -19,8 +19,19 @@ public class Factura {
         boolean socio = sc.next().equals("s");
 
         double base = precio * cantidad;
+<<<<<<< HEAD
         double descuento = calcularDescuento(base, socio);
         double total = aplicarIVA(base - descuento);
+=======
+        double descuento = 0;
+        if (base > 100) {
+            descuento = base * 0.10;
+        }
+        if (socio.equals("s")) {
+            descuento = descuento + base * 0.05;
+        }
+        double total = (base - descuento) * (1 + IVA);
+>>>>>>> 6b7a5fa750578a0eabbd3dbad69983e563971272
 
         System.out.println("Producto: " + producto);
         System.out.printf("Base: %.2f euros%n", base);

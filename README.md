@@ -41,7 +41,11 @@ El programa da 137,94 € porque solo resta 6 € de descuento: (120 − 6) × 1
 
 - Línea del error y explicación: línea 27, `descuento = base * 0.05;`. Con el depurador (punto de ruptura en la línea 23, datos 60, 2 y s) se ve que `descuento` vale 0.0 al principio, 12.0 después del primer `if` (correcto) y 6.0 después del segundo. El `=` sustituye el descuento del 10 % por el del socio en lugar de sumarlos, así que se pierden los 12 €.
 - Corrección: `descuento = descuento + base * 0.05;`. Comprobado con 60, 2 y s: Descuento 18,00 € y Total con IVA 123,42 €.
+<<<<<<< HEAD
 - Mi propia prueba (producto, precio, cantidad, socio -> total): Ratón inalámbrico, 40, 2, s -> 91,96 €. La base es 80 €, no supera 100 € y solo se aplica el 5 % de socio (4 €): (80 − 4) × 1,21 = 91,96 €. 
+=======
+- Mi propia prueba (producto, precio, cantidad, socio -> total): Ratón inalámbrico, 40, 2, s -> 91,96 €. La base es 80 €, no supera 100 € y solo se aplica el 5 % de socio (4 €): (80 − 4) × 1,21 = 91,96 €. Coincide con el cálculo a mano.
+>>>>>>> 6b7a5fa750578a0eabbd3dbad69983e563971272
 Captura del depurador: capturas/reto3.png
 
 ## Reto 4 · Reutilización

@@ -1,4 +1,4 @@
-// Palabra del día: ________
+// Palabra del día: no hay
 
 import java.util.Scanner;
 
